@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Shopping Zone APP" content="Shopping Zone App">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="K>V>PAVAN KALYAN">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            header{
+                color: white;
+            font-size: 6vh;
+            padding: 20px;
+            background: linear-gradient(45deg,rgb(235, 8, 8),rgb(24, 23, 23),rgb(0, 132, 255),rgb(17, 19, 18),rgb(19, 235, 102),black,yellow,black);
+            background-size: 500% 500%;
+            border-radius: 15px;
+            margin-left: 20px;
+            font-size: 7vh;
+            font-weight: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin-right: 1px;
+            text-align: center;
+            animation: linear-gradient 10s ease infinite;
+            }
+            @keyframes linear-gradient{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position:100% 50% ;
+            }
+            100%{
+                background-position: 0%  50%;
+            }
+            }
+            .nav{
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                background-color: whitesmoke;
+                color: black;
+                padding: 10px 20px;
+                transition: 1s;
+                position: relative;
+            }
+            .links-home{
+              color: black;
+            }
+            .links-home:hover{
+              justify-content: center;
+              align-items: center;
+              background-color: #222020;
+              padding: 5px;
+              color: white;
+              border-radius: 14px;
+            }
+            .card{
+                width: 350px;
+                margin: 10px;
+            }
+            h3{
+                margin-bottom:3px;
+                margin-top: 3px;
+                text-align: center;
+                font-size: 25px;
+                color: rgb(255, 0, 0);
+                animation: blinker 2s ease-in-out infinite;
+            }
+            @keyframes blinker{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            marquee{
+                padding: 20px;
+                font-family: 'Anton', sans-serif;
+                background-color: aqua;
+            }
+            .card img{
+                width: 300px;
+                height: 300px;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                justify-items: center;
+            }
+          .btn-2{
+            padding: -5px 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 14px;
+          }
+          .btn-2:hover{
+            background-color: black;
+            color: white;
+          }
+          .card-title{
+            font-size: 25px;
+            text-align: center;
+            padding: 10px 20px;
+          }  
+           .btn{
+            color: rgb(235, 21, 21);
+            padding: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+          }
+          .module-border-wrap{
+            max-width: 250px;
+            padding: 1rem;
+            position:relative;
+            background: linear-gradient(to right,rgb(245, 11, 11),black,rgb(0, 204, 255),rgb(20, 241, 20),rgb(241, 241, 20));
+            padding: 10px;
+            margin-left: 80px;
+            animation: linear-gradient 3s ease infinite;
+            background-size: 900% 900%;
+            display: auto;
+            
+          }
+          .module{
+            background: #222;
+            color:white;
+            padding:1rem;
+          }
+          h2{
+            text-align: center;
+            color: rgb(36, 31, 31);
+            
+          }
+          .box{
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px auto;
+            transition: 0.5s;
+            box-shadow: 0  5px 10px 10px rgb(0, 0, 0);
+            background-color: antiquewhite;
+          }
+          .box:hover{
+            transform: rotate(12deg);
+          }
+          .icons{
+            width:26px;
+            height: 26px;
+            margin-left: 10px;
+            transition: 1s;
+            border-radius: 100%;
+            animation:pulse 1s ease infinite;
+          }
+      
+          .pk{
+                 margin-left: 150px;
+                 margin-top: -40px;
+          }
+          .pt{
+              margin-left: 50px;
+               margin-top: -29px;
+              font-size: 19px;
+          }
+          .card{
+              background: linear-gradient(45deg,rgb(9, 87, 231),rgb(5, 211, 67),rgb(247, 239, 239),white,rgb(228, 11, 155),red);
+              background-size: 230%  230%;
+              animation: linear-gradient 5s ease infinite;
+            }
+            @keyframes linear-gradient{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position:100% 50% ;
+            }
+            100%{
+                background-position: 0%  50%;
+            }
+            
+          }
+          .btn-primary{
+                color: rgb(22, 18, 21);
+                padding:10px;
+                background-color:white
+              }
+            .marquee-10{
+              border: 2px solid rgb(255, 255, 255);
+           }
+           .marquee-10,img{
+            height: 80px;
+            margin-top: -15px;
+            background-color:white;
+           }
+           .rounded{
+                height: auto;
+           }
+          .title{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 20px;
+            padding: 8px 30px;
+            background-color: antiquewhite;
+            border-radius: 14px;
+          }
+         
+         .bg{
+          border: 2px solid lightgray;
+          background-color: #222020;
+         }
+         .links-home-1{
+          padding-left:20px ;
+          padding: 5px;
+          text-align: center;
+          padding-right: 20px;
+          color: rgb(255, 255, 255);
+          transition:  padding 1s , transform 1s;
+         }
+         .links-home-1:hover{
+          padding: 10px 40px;
+          color: black;
+          background-color: aliceblue;
+         }
+         .links-home-2, .links-home-3{
+          padding-left:20px ;
+          padding: 5px;
+          text-align: center;
+          padding-right: 20px;
+          color: rgb(255, 255, 255);
+          transition:  padding 1s , transform 1s;
+         }
+         .links-home-4{
+          padding-left:20px ;
+          padding: 5px;
+          text-align: center;
+          padding-right: 20px;
+          color: rgb(255, 255, 255);
+          transition:  padding 1s , transform 1s;
+         }
+         .links-home-4:hover{
+          padding: 10px 40px ;
+          background-color: aliceblue;
+          color: black;
+         }
+         .links-home-2:hover{
+          padding: 10px 40px ;
+          background-color: aliceblue;
+          color: black;
+         }
+         .links-home-3:hover{
+          padding: 10px 30px ;
+          color: black;
+          background-color: aliceblue;
+         }
+         .links-home-5{
+          padding-left:20px ;
+          padding: 5px;
+          text-align: center;
+          padding-right: 20px;
+          color: rgb(255, 255, 255);
+          transition:  padding 1s , transform 1s;
+         }
+         .links-home-5:hover{
+          padding: 10px 40px ;
+          background-color: aliceblue;
+          color: black;
+         }
+         .links-home-6{
+          padding-left:20px ;
+          padding: 5px;
+          text-align: center;
+          padding-right: 20px;
+          color: rgb(255, 255, 255);
+          transition:  padding 1s , transform 1s;
+         }
+         .links-home-6:hover{
+          padding: 10px 40px ;
+          background-color: aliceblue;
+          color: black;
+         }
+         .links-home-7{
+          padding-left:20px ;
+          padding: 5px;
+          text-align: center;
+          padding-right: 20px;
+          color: rgb(255, 255, 255);
+          transition:  padding 1s , transform 1s;
+         }
+         .links-home-7:hover{
+          padding: 10px 40px ;
+          background-color: aliceblue;
+          color: black;
+         }
+         .t{
+            width: 40px;
+            height: 40px;
+            margin-left: 10px; 
+            margin-top: 4px;     
+          }
+          .class{
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            border-left: 10px solid red;
+            border-right: 10px solid red;
+          }
+          .linkstw{
+            padding: 10px;
+            justify-content: center;
+            
+          }
+          .updates{
+            text-decoration: none;
+            color: #ec131e;
+            animation: blink 1s linear infinite;
+          }
+          @keyframes blink{
+            0%{
+              opacity: 0;
+            }
+            50%{
+              opacity: 0.2;
+            }
+            75%{
+              opacity: 0.7;
+            }
+            100%{
+              opacity: 1;
+            }
+          }
+          .brands{
+            color: #000000;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+          }
+        </style>
+    </head>
+    <body>
+        <br>
+        <!-- header goes here-->
+        <main>
+            <header>SHOPPING ZONE</header>
+        </main>
+        <br>
+        <!-- navigatio goes here-->
+         <nav class="nav">
+            <a href="INDEX.html" style="text-decoration: none; " class="links-home"><b>HOME</b></a>&nbsp;
+            &nbsp;
+
+            <a href="INDEX.html" style="text-decoration: none; " class="links-home"><b>ABOUT</b></a>&nbsp;
+            &nbsp;
+
+            <button class="btn-2 btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> MORE DEALS</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header" style="background-color: aquamarine; padding:10px" >
+                <h5 id="offcanvasRightLabel">SHOPPING ZONE DEALS</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+            <div class="offcanvas-body">
+              <div class="title">DEALS</div>
+              <br>
+              <div class="bg">
+                <br>
+              <a href="web.html" style="text-decoration: none; " class="links-home-1" target="_blank"><b>Smart Phones</b></a>
+              <br><br>
+              <a href="web-2.html" style="text-decoration: none; " class="links-home-2" target="_blank"><b>Laptop's</b></a>
+              <br><br>
+              <a href="web-3.html" style="text-decoration: none; " class="links-home-3" target="_blank"><b>Headphones & Buds</b></a>
+              <br><br>
+              <a href="web-4.html" style="text-decoration: none; " class="links-home-4" target="_blank"><b>Mobile Accessories</b></a>
+              <br><br>
+              <a href="web-5.html" style="text-decoration: none; " class="links-home-5" target="_blank"><b>Shoes & Hand bags</b></a>
+              <br><br>
+              <a href="web-6.html" style="text-decoration: none; " class="links-home-6" target="_blank"><b>Computer Accessories</b></a>
+              <br><br>
+              <a href="web-7.html" style="text-decoration: none; " class="links-home-7" target="_blank"><b>Grocery Accessories
+              </b></a>
+              <br><br>
+              </div>
+              </div>
+            </div>
+
+          </nav>
+        <br>
+        <!--marquee goes here-->
+
+        <marquee  onmouseover="this.stop();"
+        onmouseout="this.start();" scrollamount="15"> HII GUYS'S WELCOME TO SHOPPING ZONE....... TODAY  PRIME DAY SALES------(1).SMART WATCHES   (2). SMART PHONES   (3).SMART LED TV  (4).EARBUDS   (5).LAPTOPS   (6). GAMING LAPTOPS</marquee>
+        <br>
+        <br>
+        <!--slides goes here-->
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i.ibb.co/2kCW7JW/ezgif-com-video-to-gif-2.gif" class="d-block w-100" alt="..">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.ibb.co/2kCW7JW/ezgif-com-video-to-gif-2.gif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.ibb.co/0y84vC1/ezgif-com-video-to-gif-4.gif" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <br>
+        <div class="class">
+          <div class="linkstw">
+            <p class="updates">Join For More Updates :</p>
+       <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2504/2504941.png" alt=" telegram" class="t"></a>
+       <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt=" whatsapp" class="t"></a>
+       <a href="#"><img  src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt=" instagram" class="t"></a>
+       <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670086.png" alt=" quora" class="t"></a>
+       <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt=" twitter" class="t"></a>
+       <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt=" facebook" class="t"></a>
+        </div>
+        </div>
+        <!--Amazon Marquee goes here-->
+        <hr>
+        <p class="brands">BRANDS PARTNERS</p>
+        <marquee class="marquee-10" scrollamount="25" direction="left"  onmouseover="this.stop();"
+        onmouseout="this.start();">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://1000logos.net/wp-content/uploads/2021/02/Flipkart-logo-500x281.jpg">
+
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://assets.aboutamazon.com/dims4/default/c1f10ce/2147483647/strip/true/crop/1200x800+0+0/resize/324x216!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2Fab%2F53dea402445d83406077763cfde7%2Famazon-logo-1200x800.png">
+            <img src="https://1000logos.net/wp-content/uploads/2021/02/Flipkart-logo-500x281.jpg">
+        </marquee>
+        <hr>
+       
+        <br>
+        <!--Imgaes and content-->
+        <style>
+            .card-display{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+        </style>
+        <div class="card-display">
+        <div class="card" style="background: linear-gradient(45deg,black,black,rgb(38, 172, 250),black,black);">
+          <br>
+          <center>
+              <img src="https://m.media-amazon.com/images/I/91cFxYoou8L.SX679.jpg" class="card-img-top" alt="Smartwatch" style="border-radius: 20px;">
+          </center>
+        
+          <div class="card-body">
+            <h5 class="card-title" style="color: rgb(247, 245, 245); background-color: #222020;">Realme Narzo 60 Pro 5G</h5>
+            <p class="card-text"style="color: white">
+              <ul style="color: white;">
+                <li>realme narzo 60 Pro (Mars Orange,8GB+128GB)</li>
+                <li>MediaTek Dimensity 7050</li>
+                <li>120 Hz Super Amoled Curved Display</li>
+                <li>100 MP OIS Camera</li>
+              </ul>
+            </p>
+            <!---->
+            
+            <br>
+            <center>
+              <button style="padding: 20px;"><a href="https://amzn.to/3K37M99">BUY NOW</a></button>
+            </center>
+          </div>
+        </div>
+          <br>
+          <div class="card" style="background: linear-gradient(45deg,black,black,rgb(38, 250, 84),black,black);">
+            <br>
+            <center>
+                <img src="https://m.media-amazon.com/images/I/61eq73o4VaL.SY450.jpg" class="card-img-top" alt="Smartwatch" style="border-radius: 200px;">
+            </center>
+          
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(253, 249, 249); background-color: black;">BeatXP Marv Neo_SMART WATCHES</h5>
+              <p class="card-text"style="color:white">BeatXP Marv Neo 1.85” (4.6 cm) Display, Bluetooth Calling Smart Watch, Smart AI Voice Assistant, 100+ Sports Modes, Heart & SpO2 Monitoring, IP68, Fast Charging (Electric Black)
+              </p>
+              <!---->
+              
+              <br>
+              <center>
+                <button style="padding: 20px;"><a href="https://amzn.to/43zoKDe">BUY NOW</a></button>
+              </center>
+            </div>
+          </div>
+          <br>
+          <div class="card" style="background: linear-gradient(45deg,black,black,rgb(252, 102, 16),black,black);">
+            <center>
+                <br>
+            <img src="https://m.media-amazon.com/images/I/61TapeOXotL.SX679.jpg" class="card-img-top" alt="..." style="border-radius: 25px;">
+            </center>
+            <div class="card-body">
+              <h5 class="card-title" style="color: white; background-color: black;">Noise Twist Bluetooth Calling Smart Watch</h5>
+              <p class="card-text" style="color: rgb(226, 223, 223);">Noise Twist Bluetooth Calling Smart Watch with 1.38" TFT Biggest Display, Up-to 7 Days Battery, 100+ Watch Faces, IP68, Heart Rate Monitor, Sleep Tracking (Jet Black) 
+            </p>
+              <center>
+              <button style="padding: 20px; margin-top:50px;"><a href="https://amzn.to/3DxVphX">BUY NOW</a></button>
+            </center>
+            </div>
+          </div>
+          <br>
+          
+          <div class="card" style="background: linear-gradient(45deg,black,black,rgb(250, 38, 169),black,black);">
+            <center>
+                <br>
+            <img src="https://m.media-amazon.com/images/I/61JVcCzQ0hL.SX679.jpg" class="card-img-top" alt="..." style="border-radius: 10px;">
+            </center>
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(247, 240, 240); background-color: black;">PTron Bassbuds Plus in Ear True Wireless Stereo Earbuds with Mic, Deep Bass Bluetooth</h5>
+              <p class="card-text"style="color:white">PTron Bassbuds Plus in Ear True Wireless Stereo Earbuds with Mic, Deep Bass Bluetooth Headphones, Voice Assistance, IPX4 Sweat & Water Resistant TWS, 12Hrs Battery & Fast Charge (Red & Black)</p>
+            </p>
+            <br>
+            <center>
+              <button style="padding: 20px;"><a href="https://amzn.to/46OAjck">BUY NOW</a></button>
+            </center>
+            </div>
+          </div>
+          <br>
+          <div class="card" style="background: linear-gradient(45deg,black,black,rgb(252, 102, 16),black,black);">
+            <center>
+                <br>
+            <img src="https://m.media-amazon.com/images/I/61TapeOXotL.SX679.jpg" class="card-img-top" alt="..." style="border-radius: 25px;">
+            </center>
+            <div class="card-body">
+              <h5 class="card-title" style="color: white; background-color: black;">Noise Twist Bluetooth Calling Smart Watch</h5>
+              <p class="card-text" style="color: rgb(226, 223, 223);">Noise Twist Bluetooth Calling Smart Watch with 1.38" TFT Biggest Display, Up-to 7 Days Battery, 100+ Watch Faces, IP68, Heart Rate Monitor, Sleep Tracking (Jet Black) 
+            </p>
+              <center>
+              <button style="padding: 20px; margin-top:50px;"><a href="https://amzn.to/3DxVphX">BUY NOW</a></button>
+            </center>
+            </div>
+          </div>
+          <br>
+          <div class="card" style="background: linear-gradient(45deg,black,black,rgb(38, 172, 250),black,black);">
+            <br>
+            <center>
+                <img src="https://m.media-amazon.com/images/I/91cFxYoou8L.SX679.jpg" class="card-img-top" alt="Smartwatch" style="border-radius: 20px;">
+            </center>
+          
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(247, 245, 245); background-color: #222020;">Realme Narzo 60 Pro 5G</h5>
+              <p class="card-text"style="color: white">
+                <ul style="color: white;">
+                  <li>realme narzo 60 Pro (Mars Orange,8GB+128GB)</li>
+                  <li>MediaTek Dimensity 7050</li>
+                  <li>120 Hz Super Amoled Curved Display</li>
+                  <li>100 MP OIS Camera</li>
+                </ul>
+              </p>
+              <!---->
+              
+              <br>
+              <center>
+                <button style="padding: 20px;"><a href="https://amzn.to/3K37M99">BUY NOW</a></button>
+              </center>
+            </div>
+          </div>
+          <br>
+          <div class="card" style="background: linear-gradient(45deg,black,black,rgb(38, 172, 250),black,black);">
+            <br>
+            <center>
+                <img src="https://m.media-amazon.com/images/I/91cFxYoou8L.SX679.jpg" class="card-img-top" alt="Smartwatch" style="border-radius: 20px;">
+            </center>
+          
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(247, 245, 245); background-color: #222020;">Realme Narzo 60 Pro 5G</h5>
+              <p class="card-text"style="color: white">
+                <ul style="color: white;">
+                  <li>realme narzo 60 Pro (Mars Orange,8GB+128GB)</li>
+                  <li>MediaTek Dimensity 7050</li>
+                  <li>120 Hz Super Amoled Curved Display</li>
+                  <li>100 MP OIS Camera</li>
+                </ul>
+              </p>
+              <!---->
+              
+              <br>
+              <center>
+                <button style="padding: 20px;"><a href="https://amzn.to/3K37M99">BUY NOW</a></button>
+              </center>
+            </div>
+          </div>
+          <br><div class="card" style="background: linear-gradient(45deg,black,black,rgb(38, 172, 250),black,black);">
+            <br>
+            <center>
+                <img src="https://m.media-amazon.com/images/I/91cFxYoou8L.SX679.jpg" class="card-img-top" alt="Smartwatch" style="border-radius: 20px;">
+            </center>
+          
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(247, 245, 245); background-color: #222020;">Realme Narzo 60 Pro 5G</h5>
+              <p class="card-text"style="color: white">
+                <ul style="color: white;">
+                  <li>realme narzo 60 Pro (Mars Orange,8GB+128GB)</li>
+                  <li>MediaTek Dimensity 7050</li>
+                  <li>120 Hz Super Amoled Curved Display</li>
+                  <li>100 MP OIS Camera</li>
+                </ul>
+              </p>
+              <!---->
+              
+              <br>
+              <center>
+                <button style="padding: 20px;"><a href="https://amzn.to/3K37M99">BUY NOW</a></button>
+              </center>
+            </div>
+          </div>
+          <br><div class="card" style="background: linear-gradient(45deg,black,black,rgb(38, 172, 250),black,black);">
+            <br>
+            <center>
+                <img src="https://m.media-amazon.com/images/I/91cFxYoou8L.SX679.jpg" class="card-img-top" alt="Smartwatch" style="border-radius: 20px;">
+            </center>
+          
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(247, 245, 245); background-color: #222020;">Realme Narzo 60 Pro 5G</h5>
+              <p class="card-text"style="color: white">
+                <ul style="color: white;">
+                  <li>realme narzo 60 Pro (Mars Orange,8GB+128GB)</li>
+                  <li>MediaTek Dimensity 7050</li>
+                  <li>120 Hz Super Amoled Curved Display</li>
+                  <li>100 MP OIS Camera</li>
+                </ul>
+              </p>
+              <!---->
+              
+              <br>
+              <center>
+                <button style="padding: 20px;"><a href="https://amzn.to/3K37M99">BUY NOW</a></button>
+              </center>
+            </div>
+          </div>
+          <br>
+          <div class="card" style="background: linear-gradient(45deg,black,black,rgb(38, 172, 250),black,black);">
+            <br>
+            <center>
+                <img src="https://m.media-amazon.com/images/I/91cFxYoou8L.SX679.jpg" class="card-img-top" alt="Smartwatch" style="border-radius: 20px;">
+            </center>
+          
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(247, 245, 245); background-color: #222020;">Realme Narzo 60 Pro 5G</h5>
+              <p class="card-text"style="color: white">
+                <ul style="color: white;">
+                  <li>realme narzo 60 Pro (Mars Orange,8GB+128GB)</li>
+                  <li>MediaTek Dimensity 7050</li>
+                  <li>120 Hz Super Amoled Curved Display</li>
+                  <li>100 MP OIS Camera</li>
+                </ul>
+              </p>
+              <!---->
+              
+              <br>
+              <center>
+                <button style="padding: 20px;"><a href="https://amzn.to/3K37M99">BUY NOW</a></button>
+              </center>
+            </div>
+          </div>
+          <br>
+          <div class="card" style="background: linear-gradient(45deg,black,black,rgb(38, 172, 250),black,black);">
+            <br>
+            <center>
+                <img src="https://m.media-amazon.com/images/I/91cFxYoou8L.SX679.jpg" class="card-img-top" alt="Smartwatch" style="border-radius: 20px;">
+            </center>
+          
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(247, 245, 245); background-color: #222020;">Realme Narzo 60 Pro 5G</h5>
+              <p class="card-text"style="color: white">
+                <ul style="color: white;">
+                  <li>realme narzo 60 Pro (Mars Orange,8GB+128GB)</li>
+                  <li>MediaTek Dimensity 7050</li>
+                  <li>120 Hz Super Amoled Curved Display</li>
+                  <li>100 MP OIS Camera</li>
+                </ul>
+              </p>
+              <!---->
+              
+              <br>
+              <center>
+                <button style="padding: 20px;"><a href="https://amzn.to/3K37M99">BUY NOW</a></button>
+              </center>
+            </div>
+          </div>
+          <br><div class="card" style="background: linear-gradient(45deg,black,black,rgb(38, 172, 250),black,black);">
+            <br>
+            <center>
+                <img src="https://m.media-amazon.com/images/I/91cFxYoou8L.SX679.jpg" class="card-img-top" alt="Smartwatch" style="border-radius: 20px;">
+            </center>
+          
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(247, 245, 245); background-color: #222020;">Realme Narzo 60 Pro 5G</h5>
+              <p class="card-text"style="color: white">
+                <ul style="color: white;">
+                  <li>realme narzo 60 Pro (Mars Orange,8GB+128GB)</li>
+                  <li>MediaTek Dimensity 7050</li>
+                  <li>120 Hz Super Amoled Curved Display</li>
+                  <li>100 MP OIS Camera</li>
+                </ul>
+              </p>
+              <!---->
+              
+              <br>
+              <center>
+                <button style="padding: 20px;"><a href="https://amzn.to/3K37M99">BUY NOW</a></button>
+              </center>
+            </div>
+          </div>
+          <script>(function(w, d) { w.CollectId = "649c0c8e3584d8a3c86dc560"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);
+          </script>
+        
+          <hr>
+          <br>
+            <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+      </a>
+      
+      
+      <a href="" class="me-4 link-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:aqua}</style><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg>
+      </a>
+      
+      <a href="" class="me-4 link-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ec131e}</style><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>SHOPPING ZONE
+          </h6>
+          <p>
+            HI GUYS WELCOME TO SHOPPING ZONE HOPE YOU LIKE IT AND ENJOY THE BEST OFFERS AND DEALS
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">SMART PHONES</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">SMART WATCHES</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">GAMING LAPTOPS</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">CODING LAPTOPS</a>
+          </p>
+        </div>
+        
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> KANDUKUR,523105, IND</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            gggamer9848@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> +91 63*****219</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> +91 98*****326</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="display.html">SHOPPING ZONE.APP</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+    </body>
+</html>
